@@ -4,7 +4,10 @@ require 'pry'
 
 
 #Test your code here
+bronx = Zoo.new("Bronx Zoo", "Bronx")
+cat = Animal.new("Cat", 3, "Kitty", bronx)
+panda = Animal.new("Panda", 400, "Ling Ling", bronx)
 
-
-binding.pry
-puts "done"
+p Animal.find_by_species("Panda")
+p cat.nickname
+p panda.species
