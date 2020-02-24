@@ -10,4 +10,4 @@ panda = Animal.new("Panda", 400, "Ling Ling", bronx)
 
 p Animal.find_by_species("Panda")
 p cat.nickname
-p panda.species
+p bronx.animals

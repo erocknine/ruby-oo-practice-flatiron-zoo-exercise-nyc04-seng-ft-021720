@@ -13,7 +13,7 @@ attr_accessor :name, :location
 
     def animals
         zoo = Animal.all.select{|animals| animals.zoo == self}
-        
+        zoo.map{|animals|"#{animals.nickname} the #{animals.species}"}
     end
 
     def animal_species
